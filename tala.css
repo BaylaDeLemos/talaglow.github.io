@@ -256,8 +256,6 @@ ul {
 .abtimg {
     float: left;  /* Aligns to the left */
     margin: 0;  /* No margin */
-    border-top-left-radius: 47%;  /* Border radius for top-left corner */
-    border-top-right-radius: 47%;  /* Border radius for top-right corner */
 }
   
 /* Styling for the text content in the "About Us" section */
