@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Setting the language of the page to English -->
+<head>
+    <!-- Specifying the character encoding -->
+    <meta charset="UTF-8">
+    <!-- Ensures the browser renders the page in a compatible mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive design for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page -->
+    <title>Tala Glow</title>
+    
+    <!-- Linking the external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="tala.css"> 
+    
+    <!-- Adding FontAwesome for icon fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">   
+</head>
+<body>
+    <header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="sidebar">
+            <!-- Icon for hiding the sidebar -->
+            <li onclick="hideSidebar()"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </a></li>
+            <!-- Navigation links -->
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+        
+        <!-- Main navigation bar with a logo -->
+        <ul>
+            <!-- Logo image -->
+            <li><a href="#"><img src="t.png" height="50" width="150"></a></li>
+            <!-- Navigation links -->
+            <li class="hideOnMobile"><a href="#Home">Home</a></li>
+            <li class="hideOnMobile"><a href="#Products">Products</a></li>
+            <li class="hideOnMobile"><a href="#About">About</a></li>
+            <li class="hideOnMobile"><a href="#Shop">Shop</a></li>
+            <li class="hideOnMobile"><a href="#Contact">Contact Us</a></li>
+            <!-- Menu button for showing the sidebar (for mobile devices) -->
+            <li class="menu-button" onclick="showSidebar()"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+    <!-- Home Section -->
+    <div id="Home">
+        <!-- Displaying an image in the Home section -->
+        <img src="s1.jpg" alt="tala glow"> 
+    </div>
+
+    <!-- Product Cards Section -->
+    <div class="card-container" id="Products">
+        <!-- Title for the Products section -->
+        <h1>BEST SELLERS</h1>
+        <!-- Description text for the Products section -->
+        <p>Indulge in the luxurious glow of our skincare products, crafted with precision to nourish and rejuvenate your skin for a radiant and youthful complexion.</p>
+        
+        <!-- Individual product cards -->
+        <div class="card-container">
+            <!-- First product card -->
+           <div class="pcard">
+              <div class="card-content">
+              <!-- Product image -->
+              <img src="Tala Glow Cleanser.jpg" class="center" alt="cleanser">
+              <!-- Product title -->
+              <h1>Tala Glow Cleanser</h1>
+              <!-- Product description -->
+              <p>Elevate your skincare routine with our revitalizing cleanser, a gentle yet effective solution for a fresh and clear complexion.</p>
+              <!-- Product price -->
+              <p>$45</p>
+            </div>
+           </div>
+           
+           <!-- Second product card -->
+           <div class="pcard">
+               <div class="card-content">
+               <img src="Tala Glow Toner.jpg" class="center" alt="toner">
+               <h1>Tala Glow Toner</h1>
+               <p>Revitalize your skin with our toner, offering a burst of hydration and essential nutrients for a radiant and balanced complexion.</p>
+               <p>$36</p>
+            </div>
+           </div>
+           
+           <!-- Third product card -->
+           <div class="pcard">
+               <div class="card-content">
+               <img src="Tala Glow Moisturizer.jpg" class="center" alt="mosturizer"> 
+               <h1>Tala Glow Moisturizer</h1>
+               <p>Quench and nourish your skin, providing lasting hydration and essential benefits for a radiant, healthy glow.</p>
+               <p>$50</p>
+            </div>
+           </div>
+        </div>  
+    </div>
+
+    <!-- About Section -->
+    <section>
+        <!-- Container for the About section -->
+        <div class="abt" id="About">
+            <!-- Image in the About section -->
+            <div class="abtimg">
+              <img src="1.jpg" alt="about">
+            </div>
+            <!-- About text content -->
+            <div class="abttext">
+              <h1>Why Use Tala Glow?</h1>
+              <p>Welcome to Tala, where quality skincare meets science and sustainability.<br>
+                Our products are crafted from top-notch ingredients, ensuring visible results without compromising safety.<br>
+                We believe in a holistic approach to skincare, catering to all skin types with ethically sourced and eco-friendly formulations.
+                Choose us for skincare that nourishes, protects, and revitalizes.<br>
+                Discover why so many trust us for their skincare journey, and embrace a healthier, more radiant you.</p>
+              <!-- Button to read more about the company -->
+              <button class="abtbtn" style="vertical-align:middle"><span>Read More</span></button>
+            </div>
+          </div>
+
+          <!-- Additional images in the About section -->
+          <div class="abtt">
+            <img src="abt.jpg" alt="about">
+            <img src="features.jpg" alt="features">
+          </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section>
+    <section id="Shop">
+        <div class="card-container">
+            <!-- Individual product cards for the Shop section -->
+            <div class="card-container">
+                <!-- First product card -->
+                <div class="pcard">
+                   <div class="card-content">
+                     <img src="1.png" class="center" alt="cleanser">
+                   <h1>Tala Glow Foam Cleanser</h1>
+                   <p>Elevate your skincare routine with our revitalizing cleanser, a gentle effective solution for a fresh complexion.</p>
+                   <p>$45</p>
+                   <!-- Link to add product to cart -->
+                   <a href="" class="add">Add to Cart</a>
+                </div>
+                </div>
+                
+                <!-- Second product card -->
+                <div class="pcard">
+                   <div class="card-content">
+                   <img src="2.png" class="center" alt="cream">
+                   <h1>Tala Glow Moisturizing Cream</h1>
+                   <p>A lightweight cream that nourishes your skin, providing all-day moisture and a radiant glow. Perfect for all skin types.</p>
+                   <p>$36</p>
+                   <a href="" class="add">Add to Cart</a>
+                </div>
+                </div>
+                
+                <!-- Third product card -->
+                <div class="pcard">
+                   <div class="card-content">
+                   <img src="5.png" class="center" alt="serum"> 
+                   <h1>Tala Glow Hydrating Serum</h1>
+                   <p>Quench and nourish your skin, providing lasting hydration and essential benefits for a radiant, healthy glow.</p>
+                   <p>$40</p>
+                   <a href="" class="add">Add to Cart</a>
+                </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Decorative Quote -->
+    <div class="quoteSymbol">&#8220;</div>
+    <div class="quote">Glow Beyond the Surface with Tala.</div>
+
+    <!-- Footer Section -->
+    <section>
+     <footer class="footer" id="Contact">
+       <!-- Footer content organized in columns -->
+       <div class="container">
+          <div class="row">
+            <!-- Company information section -->
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+              </ul>
+            </div>
+            <!-- Help section with various links -->
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Payment Options</a></li>
+              </ul>
+            </div>
+            <!-- Social media links -->
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Contact Us section -->
+            <div class="col-md-5">
+                <h3>Contact Us</h3>
+                <!-- Contact form -->
+                <form>
+                    <fieldset class="form-group">
+                        <!-- Email input field -->
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </fieldset>
+                    <!-- Message text area -->
+                    <fieldset class="form-group">
+                        <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                    </fieldset>
+                    <!-- Submit button -->
+                    <fieldset class="form-group text-xs-right">
+                        <button type="button">Send</button>
+                    </fieldset> 
+                </form>
+            </div>
+          </div>
+       </div>
+     </footer>
+    </section>
+</main>
+ <!-- Linking the external JavaScript file -->
+    <script src="glow.js"></script>
+</body>
+</html>
