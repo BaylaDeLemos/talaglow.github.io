@@ -1,0 +1,437 @@
+/* General body styling */
+body {
+    /* Ensures the body takes at least 100% of the viewport height */
+    min-height: 100vh;
+    /* Background color for the entire page */
+    background: white;
+}
+
+/* Navigation bar styling */
+nav {
+    /* Dark background color for the navbar with some transparency */
+    background-color: #604233ed;
+    /* Adds a shadow effect for depth */
+    box-shadow: 3px 3px 7px #ffffff;
+    /* Navbar spans the entire width of the viewport */
+    width: 100%;
+    /* Navbar remains fixed at the top of the page */
+    position: fixed;
+    /* Border color for the navbar */
+    border: #000;
+    /* Font size for text in the navbar */
+    font-size: 15px;
+}
+
+/* Styling for unordered lists within the navbar */
+nav ul {
+    /* Ensures the list takes the full width of the navbar */
+    width: 100%;
+    /* Removes default list styling */
+    list-style: none;
+    /* Flexbox to arrange list items */
+    display: flex;
+    /* Aligns list items to the end (right) */
+    justify-content: flex-end;
+    /* Centers items vertically */
+    align-items: center;
+}
+
+/* Styling for individual list items within the navbar */
+nav li {
+    /* Fixed height for list items */
+    height: 70px;
+}
+
+/* Styling for anchor tags within the navbar */
+nav a {
+    /* Anchor tags have full height of the navbar */
+    height: 100%;
+    /* Padding around the text in the navbar */
+    padding: 0 30px;
+    /* Removes text underline */
+    text-decoration: none;
+    /* Flexbox to center text vertically */
+    display: flex;
+    align-items: center;
+    /* White text color for better contrast against background */
+    color: white;
+    /* Transparent background color */
+    background-color: rgba(50, 29, 29, 0);
+}
+
+/* Changes background color on hover to indicate interactivity */
+nav a:hover {
+    background-color: rgb(121, 96, 96);
+}
+
+/* Left-aligns the first list item */
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Sidebar styling */
+.sidebar {
+    /* Fixed position at the top right of the viewport */
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* Full height for the sidebar */
+    height: 100vh;
+    /* Sidebar width */
+    width: 250px;
+    /* Ensures the sidebar appears above other content */
+    z-index: 999;
+    /* Background color with some transparency and a blur effect */
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px gray;
+    /* Initially, the sidebar is hidden */
+    display: none;
+    /* Flexbox for vertical alignment of items */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* Semi-transparent background color */
+    background-color: #603a2f88;
+}
+
+/* Ensures list items in the sidebar take the full width */
+.sidebar li {
+    width: 100%;
+}
+
+/* Ensures anchor tags in the sidebar take the full width */
+.sidebar a {
+    width: 100%;
+}
+
+/* Initially, the menu button is hidden (for larger screens) */
+.menu-button {
+    display: none;
+}
+
+/* Media query for screens smaller than 800px */
+@media (max-width: 800px) {
+    /* Hides elements with this class on smaller screens */
+    .hideOnMobile {
+        display: none;
+    }
+    /* Shows the menu button on smaller screens */
+    .menu-button {
+        display: block;
+    }
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+    /* Sidebar takes the full width on smaller screens */
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Importing a custom Google font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Setting default styling for the body */
+body {
+    line-height: 1.5;  /* Line height for improved readability */
+    font-family: "Noto Serif Display", serif;  /* Serif font family */
+}
+
+/* Global reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding doesn't affect width */
+}
+
+/* Container for centralized content with a maximum width */
+.container {
+    max-width: 1170px;
+    margin: auto;  /* Centering the container */
+}
+
+/* Flexbox to manage row-based layouts */
+.row {
+    display: flex;
+    flex-wrap: wrap;  /* Allows child elements to wrap */
+}
+
+/* Removes default list styling */
+ul {
+    list-style: none;
+}
+
+/* Styling for the Home section */
+#Home {
+    padding: 0;
+    margin: 0;  /* Resets padding and margin */
+}
+
+/* Centers content within an element */
+.center {
+    display: block;
+    margin-left: 0px;  /* Resets margin to center horizontally */
+    margin-right: 0px;
+    width: 100%;  /* Takes the full width */
+    height: 100%;  /* Takes the full height */
+}
+
+/* Styling for the Products section */
+#Products {
+    padding: 10px;
+    text-align: center;  /* Centers text within the section */
+    font-size: 20px;  /* Increases font size for headings */
+}
+
+/* Flexbox container for product cards */
+.card-container {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    flex-wrap: wrap;  /* Allows child elements to wrap */
+    gap: 20px;  /* Space between elements */
+    margin-top: 20px;
+    margin: 0px;  /* Resets margin */
+    padding: 0px;  /* Resets padding */
+    box-sizing: border-box;
+    text-align: center;  /* Centers text */
+}
+
+/* Styling for individual product cards */
+.pcard {
+    width: 325px;  /* Fixed width for each card */
+    background-color: white;  /* White background for the card */
+    border-radius: 0px;  /* No border radius */
+    box-shadow: #ffffff;  /* Subtle shadow for depth */
+    cursor: pointer;  /* Changes cursor to indicate interactivity */
+}
+
+/* Background color change on hover to indicate interactivity */
+.pcard:hover {
+    background-color: #ffffff6f;
+}
+
+/* Content styling within product cards */
+.card-content {
+    padding: 30px 30px;  /* Padding inside the card */
+    line-height: 1.3;  /* Line height for readability */
+}
+
+/* Styling for card headers */
+.card-content h1 {
+    font-size: 25px;  /* Larger font size for headers */
+    margin-bottom: 10px;  /* Space below the header */
+    color: black;  /* text color */
+}
+
+/* Styling for paragraph text within cards */
+.card-content p {
+    font-size: 18px;  /* Slightly larger font size */
+    margin-bottom: 20px;  /* Space below each paragraph */
+    color: #000;  /* text color */
+}
+
+/* Styling for "Add to Cart" links */
+.card-content .add {
+    padding: 10px;  /* Padding around the link */
+    margin: 10px;  /* Margin around the link */
+    background-color: #603a2f88;  /* Background color for the link */
+    border-radius: 10%;  /* Rounded corners */
+    font-size: 15px;  /* Font size for text */
+    text-decoration: none;  /* Removes underline */
+    color: white;  /* White text color */
+    font-weight: bold;  /* Bold font */
+}
+
+/* Styling for the "About Us" section */
+.abt {
+    display: flex;  /* Flexbox for aligning content */
+    align-items: center;  /* Centers content vertically */
+    justify-content: center;  /* Centers content horizontally */
+    padding: 0;  /* No padding */
+    margin: 0;  /* No margin */
+}
+  
+/* Styling for the image in the "About Us" section */
+.abtimg {
+    float: left;  /* Aligns to the left */
+    margin: 0;  /* No margin */
+    border-top-left-radius: 47%;  /* Border radius for top-left corner */
+    border-top-right-radius: 47%;  /* Border radius for top-right corner */
+}
+  
+/* Styling for the text content in the "About Us" section */
+.abttext {
+    font-size: 20px;  /* Larger font size for readability */
+    padding-left: 20px;  /* Padding on the left */
+    padding-top: 20%;  /* Padding on top */
+    float: left;  /* Aligns to the left */
+    text-align: left;  /* Left-aligned text */
+    margin-bottom: auto;  /* Ensures no margin at the bottom */
+}
+
+/* Styling for the "Read More" button in the "About Us" section */
+.abtbtn {
+    display: inline-block;  /* Displays as inline-block */
+    border-radius: 50px;  /* Rounded borders */
+    background-color: #603a2f;  /* Background color */
+    border: none;  /* No border */
+    color: #FFFFFF;  /* White text color */
+    text-align: center;  /* Centers text */
+    font-size: 15px;  /* Font size */
+    padding: 10px;  /* Padding around the button */
+    width: 150px;  /* Fixed width */
+    transition: all 0.5s;  /* Smooth transition for hover effects */
+    cursor: pointer;  /* Indicates interactivity */
+    margin: 5px;  /* Margin for spacing */
+    position: absolute;  /* Positioning for absolute placement */
+}
+  
+/* Styling for inner span elements within the "Read More" button */
+.abtbtn span {
+    cursor: pointer;  /* Indicates interactivity */
+    display: inline-block;  /* Displays as inline-block */
+    position: relative;  /* Relative positioning */
+    transition: 0.5s;  /* Smooth transition for hover effects */
+}
+  
+/* Styling for the hover effect on the inner span */
+.abtbtn span:after {
+    content: '\00bb';  /* Unicode character for an arrow */
+    position: absolute;  /* Absolute positioning */
+    opacity: 0;  /* Initial opacity for fade-in effect */
+    top: 0;
+    right: -20px;  /* Positioning of the arrow */
+    transition: 0.5s;  /* Smooth transition */
+}
+  
+/* Hover effect for the "Read More" button */
+.abtbtn:hover span {
+    padding-right: 25px;  /* Moves the text to the right */
+}
+  
+/* Arrow effect for hover */
+.abtbtn:hover span:after {
+    opacity: 1;  /* Changes opacity to show the arrow */
+    right: 0;  /* Moves the arrow into view */
+}
+
+/* Styling for the quote section */
+.quote {
+    margin-top: 0px;  /* No top margin */
+    font-family: 'Libre Baskerville', serif;  /* Font family */
+    font-size: 60px;  /* Large font size */
+    color: #4f5664;  /* Dark text color */
+    line-height: 76px;  /* Line height for readability */
+    text-align: center;  /* Centers the text */
+    overflow: hidden;  /* Ensures text doesn't overflow */
+}
+
+/* Styling for the quote symbol */
+.quoteSymbol {
+    margin-top: 80px;  /* Top margin */
+    margin-bottom: -200px;  /* Negative bottom margin */
+    font-family: 'Libre Baskerville', serif;  /* Font family */
+    font-size: 360px;  /* Large font size */
+    color: #adb8cf;  /* Light text color */
+    line-height: 360px;  /* Line height for spacing */
+    text-align: center;  /* Centers the text */
+}
+
+/* Styling for the footer section */
+.footer {
+    background-color: #604233;  /* Dark background color */
+    padding: 70px 0;  /* Padding around the footer */
+}
+
+/* Column-based layout for footer content */
+.footer-col {
+   width: 25%;  /* 25% width for each column */
+   padding: 0 15px;  /* Padding for spacing */
+}
+
+/* Styling for footer headings */
+.footer-col h4 {
+	font-size: 18px;  /* Font size */
+	color: #ffffff;  /* White text color */
+	text-transform: capitalize;  /* Capitalize text */
+	margin-bottom: 35px;  /* Spacing below the heading */
+	font-weight: 500;  /* Bold font */
+	position: relative;  /* Relative positioning */
+}
+
+/* Decorative line under footer headings */
+.footer-col h4::before {
+	content: '';
+	position: absolute;  /* Absolute positioning */
+	left: 0;
+	bottom: -10px;  /* Positioning the line */
+	background-color: #d6a000;  /* Line color */
+	height: 2px;  /* Line thickness */
+	box-sizing: border-box;  /* Ensures consistent behavior */
+	width: 50px;  /* Line width */
+}
+
+/* Spacing between list items in the footer */
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;  /* Spacing between items */
+}
+
+/* Styling for footer links */
+.footer-col ul li a {
+	font-size: 16px;  /* Font size */
+	text-transform: capitalize;  /* Capitalize text */
+	color: #ffffff;  /* White text color */
+	text-decoration: none;  /* No underline */
+	font-weight: 300;  /* Light font */
+	color: #bbbbbb;  /* Gray text color */
+	display: block;  /* Displays as block */
+	transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for footer links */
+.footer-col ul li a:hover {
+	color: #ffffff;  /* Changes text color on hover */
+	padding-left: 8px;  /* Adds padding on hover for a slide-in effect */
+}
+
+/* Styling for social media links in the footer */
+.footer-col .social-links a {
+	display: inline-block;  /* Displays as inline-block */
+	height: 40px;  /* Fixed height */
+	width: 40px;  /* Fixed width */
+	background-color: rgba(255,255,255,0.2);  /* Semi-transparent background */
+	margin: 0 10px 10px 0;  /* Spacing around links */
+	text-align: center;  /* Centers text */
+	line-height: 40px;  /* Centers text vertically */
+	border-radius: 50%;  /* Rounded shape */
+	color: #ffffff;  /* White text color */
+	transition: all 0.5s ease;  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for social media links */
+.footer-col .social-links a:hover {
+	color: #24262b;  /* Changes text color */
+	background-color: #ffffff;  /* Changes background color */
+}
+
+/* Styling for column-based layout */
+.col-md-5 {
+    color: white;  /* White text color */
+    font-size: 16px;  /* Font size */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;  /* Adjusts width for smaller screens */
+    margin-bottom: 30px;  /* Adds margin for spacing */
+}
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;  /* Takes the full width on smaller screens */
+}
+}
